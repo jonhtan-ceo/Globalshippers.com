@@ -211,7 +211,7 @@
       </div>
       <div>
         <strong>Status:</strong>
-        <p>Arrived in Washington</p>
+        <p>Customs Cleared</p>
       </div>
       <div>
         <strong>Current Location:</strong>
@@ -243,7 +243,7 @@
         destination: 'Trailer 213, 700 North Road 32, Pasco, WA 99301, United States',
         updates: [
           { date: '--------', status: 'Vehicle Received', location: 'Washington Export Lot' },
-          { date: '--------', status: 'Customs Cleared', location: 'Washington Customs Office' },
+          { date: '2025-05-23', status: 'Customs Cleared', location: 'Washington Customs Office' },
           { date: '2025-05-20', status: 'Arrived in Washington', location: 'Washington' },
           { date: '2025-05-18', status: 'In Transit', location: 'Texas Highway 83' },
           { date: '2025-05-16', status: 'Out for Final Delivery', location: 'Texas Tx' }
@@ -257,7 +257,7 @@
       let itemClass = '';
       let iconHTML = '<i class="fas fa-dot-circle"></i>';
 
-      if (update.status === 'Arrived in Washington') {
+      if (update.status === 'Customs Cleared') {
         itemClass = 'highlight';
         iconHTML = '<i class="fas fa-map-marker-alt"></i>';
       } else if (index >= 0) {
